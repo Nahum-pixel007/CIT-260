@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="wrap">
+            <div class="header">
+                <div class="logo">
+                    <div class="dot"></div>
+                    <span>College of Southern Nevada</span>
+                </div>
+            </div>
+            <h2>CSN Exam Portal</h2>
+
+        <div id="exam-page" class="contanier">
+            <h1>Exam Registration</h1>
+            <form id="examSelect" required>
+                <label>Exam: </label>
+                <select>
+                    <option>Math</option>
+                    <option>Sciene</option>
+                    <option>English</option>
+                    <option>CIT 260</option>
+                </select><br><br>
+                <label></label>
+                <label>Date: </label>
+                <input type="date" id="sel-date" min="" />
+            </form>
+            <button id="logout" onclick="logout()">Logout</button>
+        </div>
+       
+    </div>
+
+    <script src="commands.js"></script>
+</body>
+</html>

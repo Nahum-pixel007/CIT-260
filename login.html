@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSN Exam Portal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="wrap">
+            <div class="header">
+                <div class="logo">    
+                <span>College of Southern Nevada</span>
+            </div>
+            <h2>CSN Exam Portal</h2>
+        
+        <!-- Login Page-->
+        
+        <div id="page-login" class="contanier">
+            <div class="border">
+                <form id="loginForm">
+                    <label>Username</label><br>
+                    <input type="email" id="loginEmail" placeholder="Enter Email" required><br>
+                    <label>Password</label><br>
+                    <input type="password" id="loginPassword" placeholder="Enter Password" required><br>
+
+                    <button type="submit">Login</button> <br>
+                </form>
+                   <button class="secondary-btn" onclick="goToRegister()">Create Account</button>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="commands.js"></script>
+    
+</body>
+</html>
