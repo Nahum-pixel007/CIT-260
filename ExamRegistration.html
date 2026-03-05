@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>welcome</title>
+    <link rel="stylesheet" href="ExamRegistration.css">
+</head>
+<body>
+
+    <div class="wrap">
+            <div class="header">
+                <div class="logo">    
+                <span>College of Southern Nevada</span>
+            </div>
+            <h2>CSN Exam Portal</h2>
+        
+        <!-- Login Page-->
+        
+        <div id="page-login" class="page active">
+            <div class="contanier">
+                <form id="loginForm">
+                    <label class="label">Username</label><br>
+                    <input type="email" id="loginEmail" placeholder="Enter Email" required><br>
+                    <label class="label">Password</label><br>
+                    <input type="password" id="loginPassword" placeholder="Enter Password" required>
+                    
+                    <br><br>
+
+                    <button type="submit" class="button">Login</button> <br><br>
+                </form>
+                
+                <button class="secondary-btn" onclick="goToRegister()">Create Account</button>
+            </div>
+        </div>
+
+        <!--- Create an Account Page -->
+
+        <div id="page-register" class="page">
+            <div class="contanier">
+                <form id="registerForm">
+                    <label class="label">Enter First Name</label><br>
+                    <input type="text" id="registerfName" placeholder="John" required><br>
+
+                    <label class="label">Enter Last Name</label><br>
+                    <input type="text" id="registerlName" placeholder="Smith" required><br>
+
+                    <label class="label">Enter NSHE#</label><br>
+                    <input type="text" id="registerNSHE" placeholder="1234567890" required><br>
+
+                    <label class="label">Create a Pasword</label><br>
+                    <input type="password" id="registerPassword" placeholder="Password" required><br>
+
+                    <button type="submit" class="Button">Submit</button>
+                </form><br>
+                <button class="secondary-btn" onclick="goToLogin()">Back To Login</button>
+            </div>
+        </div>
+
+        
+
+        <!-- Exam Selection-->
+
+        <div id="page-exam" class="page">
+            <div class="contanier">
+                
+                <form id="examSelect" required>
+                    <label>Exam: </label>
+                    <select>
+                        <option>Math</option>
+                        <option>Sciene</option>
+                        <option>English</option>
+                        <option>CIT 260</option>
+                    </select><br><br>
+
+                    <label>Campus: </label>
+                    <select class="select">
+                        <option>Charleston</option>
+                        <option>North Las Vegas</option>
+                        <option>Henderson</option>
+                    </select><br><br>
+
+                    <label>Date: </label>
+                    <input type="date" id="sel-date" min="" /><br><br>
+
+
+                    <label>Time: </label>
+                    <select class="select">
+                        <option>7:00 am</option>
+                        <option>8:00 am</option>
+                        <option>9:00 am</option>
+                        <option>10:00 am</option>
+                        <option>11:00 am</option>
+                        <option>12:00 pm</option>
+                        <option>1:00 pm</option>
+                        <option>2:00 pm</option>
+                        <option>3:00 pm</option>
+                        <option>4:00 pm</option>
+                        <option>5:00pm</option>
+                    </select><br><br>
+                </form>
+                <button id="logout" onclick="goToLogin()">Logout</button>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="ExamRegistration.js"></script>
+    
+</body>
+</html>
